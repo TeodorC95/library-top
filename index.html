@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Library</h1>
+      <div class="container">
+        <!--
+        <div class="card" data-bookid="43252342">
+          <h2 class="title-card">The hobbit</h2>
+          <h3 class="title-author">Dzordz Martin</h3>
+          <p>Pages: 324</p>
+          <p class="read">
+            Procitano: <span>da</span
+            ><i class="fa fa-refresh reverse" aria-hidden="true"></i>
+          </p>
+          <i class="fa fa-window-close-o delete-book" aria-hidden="true"></i>
+        </div>
+        <div class="card">
+          <h2 class="title-card">The hobbit</h2>
+          <h3 class="title-author">Dzordz Martin</h3>
+          <p>Pages: 324</p>
+          <p>Procitano: <span>da</span></p>
+        </div> -->
+      </div>
+      <!-- container -->
+      <button class="newBook">NEW BOOK</button>
+    </main>
+    <div class="modal-overlay modal-hidden"></div>
+    <div class="modal modal-hidden">
+      <form class="book-form">
+        <input type="text" name="formTitle" id="ft" placeholder="title" />
+        <br />
+        <input type="text" name="formAuthor" id="fa" placeholder="author" />
+        <br />
+        <input type="text" name="formPages" id="fp" placeholder="pages" />
+        <label for="procitano">Procitano</label>
+        <input type="checkbox" id="read" />
+        <input type="submit" id="formSubmit" />
+      </form>
+    </div>
+  </body>
+</html>
